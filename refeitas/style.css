@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* == RESET == */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+
+  background-color: rgba(245, 245, 245, 1);
+}
+
+/* == LOGIN == */
+
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  row-gap: 15px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+
+  padding: 50px;
+  padding-top: 30px;
+}
+
+#login .inputWrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  min-width: 200px;
+  width: 40vw;
+  max-width: 80vw;
+
+  border-bottom:  1px solid #C5C5C5;
+}
+
+#login .inputWrapper input {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 15px;
+  padding-left: 60px;
+
+  border: none;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+#login .inputWrapper select {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 15px;
+  padding-left: 60px;
+
+  background: URL("./img/arrow.png");
+  background-position: right 1rem center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+
+  border: none;
+  border-bottom: 1px solid #C5C5C5;
+
+  appearance: none;
+}
+
+#login .inputWrapper .imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 39px;
+  height: 100%;
+
+  padding-left: 15px;
+}
+
+#login .inputWrapper .imageWrapper img {
+  width: 24px;
+}
+
+#login .links {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+#login .links a {
+  color: #606060;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* == GERAL == */
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  width: 100%;
+  min-height: 52px;
+  height: 71px;
+
+  padding: 10px 30px;
+
+  background-color: rgba(102, 204, 153, 1);
+
+  z-index: 2;
+}
+
+header .logoWrapper {
+  display: flex;
+
+  column-gap: 20px;
+}
+
+header #retractMenuIcon {
+  cursor: pointer;
+}
+
+header .accountWrapper {
+  display: flex;
+  align-items: center;
+
+  column-gap: 10px;
+}
+
+header .accountWrapper #accountMenuIcon {
+  padding: 0 10px;
+  border-right: 1px solid #F5F5F5;
+}
+
+header .accountWrapper h3 {
+  color: #F5F5F5;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .accountWrapper #profilePicture {
+  border-radius: 50%;
+}
+
+/* sidenav */
+
+#sideNav {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 40px;
+
+  min-height: 100%;
+  max-width: 73px;
+  min-width: 50px;
+
+  padding: 16px;
+
+  background: #FFFFFF;
+  border-right: 1px solid #C5C5C5;
+
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+#sideNav.active {
+  transform: translateX(0);
+}
+
+#sideNav .iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 40px;
+  min-height: 40px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+#sideNav .iconWrapper.active {
+  background: rgba(102, 204, 153, 0.28);
+}
+
+main {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  background: #F5F5F5;
+}
+
+main .content {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  width: calc(100% - 73px);
+  min-height: 100%;
+
+  padding: 30px;
+}
+
+main .content#geral {
+  grid-template-areas:
+    "breadcrumbs   .             .             .             .             .           "
+    "dataTracking  dataTracking  dataTracking  weeklyReport  weeklyReport  weeklyReport"
+    "spaceReport   spaceReport   shortcuts     shortcuts     integrations  integrations";
+
+  grid-template-rows: 30px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main .content #breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  max-height: 30px;
+
+  column-gap: 30px;
+}
+
+main .content #breadcrumbs .dashboardWrapper {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 6px;
+}
+
+main .content #breadcrumbs .dashboardWrapper img {
+  width: 100%;
+}
+
+main .content #breadcrumbs h2 {
+  font-weight: 600;
+}
+
+main .content #breadcrumbs h1 {
+  padding-bottom: .3rem;
+
+  color: #4D4D4D;
+
+  font-size: 14px;
+
+  opacity: .6;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #FFFFFF;
+}
+
+.boxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 10px 30px;
+
+  border-bottom: 2px solid #C5C5C5;
+}
+
+.boxHeader h2 {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #4D4D4D;
+
+  opacity: 0.6;
+}
+
+.boxContent {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+
+  justify-content: center;
+}
+
+.boxGrid {
+  display: grid;
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.subBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #FFCC00;
+
+  border-radius: 4px;
+}
+
+.subBox .iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 10px;
+
+  width: 50%;
+  height: 100%;
+
+  padding: 10px;
+}
+
+.subBox .iconWrapper h3 {
+  color: #F5F5F5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.subBox .subBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 100%;
+}
+
+.subBox .subBoxContent span {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #F5F5F5;
+}
+
+.boxTable {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  border: 0.4px solid #C5C5C5;
+
+  border-radius: 4px;
+}
+
+.boxTableHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  padding: 10px;
+
+  background-color: #66CC99;
+}
+
+.boxTableHeader h3 {
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.boxTableContent {
+  width: 100%;
+  height: 100%;
+}
+
+.boxTableLine {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  padding: 10px;
+
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.boxTableLine .boxTableLineContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  min-height: 22px;
+}
+
+.boxTableLine .boxTableLineContent:first-of-type {
+  justify-content: flex-start;
+}
+
+.boxTableLineContent span {
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #4D4D4D;
+}
+
+#dataTracking {
+  grid-area: dataTracking;
+}
+
+#geral #dataTracking .boxGrid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 120px 120px;
+}
+
+#geral #dataTracking .subBox:nth-of-type(2) {
+  background: #0F85EC;
+}
+
+#geral #dataTracking .subBox:nth-of-type(3) {
+  background: #66CC99;
+}
+
+#geral #dataTracking .subBox:nth-of-type(4) {
+  background: #FF13FF;
+}
+
+#geral #dataTracking .subBox:nth-of-type(5) {
+  background: #16AB2A;
+}
+
+#geral #dataTracking .subBox:nth-of-type(6) {
+  background: #FF3E3E;
+}
+
+#weeklyReport {
+  grid-area: weeklyReport;
+}
+
+#spaceReport {
+  grid-area: spaceReport;
+}
+
+#shortcuts {
+  grid-area: shortcuts;
+}
+
+#shortcuts .boxGrid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 120px 120px;
+}
+
+#shortcuts .subBox {
+  background-color: #0F85EC;
+}
+
+#shortcuts .iconWrapper {
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding-left: 30px;
+}
+
+#integrations {
+  grid-area: integrations;
+}
+
+#integrations .boxTableHeader h3:nth-of-type(1) {
+  width: 50%;
+}
+
+#integrations .boxTableHeader h3:nth-of-type(2) {
+  width: 25%;
+}
+
+#integrations .boxTableHeader h3:nth-of-type(3) {
+  width: 25%;
+}
+
+#integrations .boxTableContent .boxTableLineContent:nth-of-type(1) {
+  width: 50%;
+}
+
+#integrations .boxTableContent .boxTableLineContent:nth-of-type(2) {
+  width: 25%;
+}
+
+#integrations .boxTableContent .boxTableLineContent:nth-of-type(3) {
+  width: 25%;
+}
+
+main .content#access {
+  grid-template-areas:
+    "breadcrumbs   .             .           "
+    "dataTracking  monthlyReport  spaceReport"
+    "companies     companies      companies  ";
+
+  grid-template-rows: 30px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#access .boxGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+#access #monthlyReport {
+  grid-area: monthlyReport;
+}
+
+#access #companies {
+  grid-area: companies;
+}

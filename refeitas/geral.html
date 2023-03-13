@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Geral</title>
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="media.css">
+      <link rel="shortcut icon" href="img/iconLogo.ico" type="image/x-icon">
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+     <header>
+       <div class="logoWrapper">
+         <img id="logoMenuIcon" src="./img/logo.png" alt="logo">
+         <img id="retractMenuIcon" src="./img/retractMenu.svg" alt="retractMenu">
+       </div>
+       <div class="accountWrapper">
+         <img id="accountMenuIcon" src="./img/accountMenuIcon.svg" alt="account menu">
+         <h3>Lorem Ipsum Dolor</h3>
+         <img id="profilePicture" src="./img/profilePicture.png" alt="">
+       </div>
+     </header>
+     <main>
+       <nav id="sideNav" class="active">
+         <div class="iconWrapper active"><img src="./img/sideNavIcon1.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon2.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon3.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon4.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon5.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon6.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon7.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon8.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon9.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon10.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon11.svg" alt=""></div>
+         <div class="iconWrapper"><img src="./img/sideNavIcon12.svg" alt=""></div>
+       </nav>
+       <div class="content" id="geral">
+         <div id="breadcrumbs">
+           <div class="dashboardWrapper">
+             <h2>Dashboard</h2>
+             <img src="./img/underLine.svg" alt="">
+           </div>
+           <h1>Geral</h1>
+         </div>
+         <div id="dataTracking" class="box">
+           <div class="boxHeader">
+             <h2>Acompanhamento de Dados</h2>
+             <img src="./img/bars.svg" alt="">
+           </div>
+           <div class="boxContent boxGrid">
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/people.svg" alt="">
+                 <h3>Total Contatos</h3>
+               </div>
+               <div class="subBoxContent">
+                 <span>20</span>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div id="weeklyReport" class="box">
+           <div class="boxHeader">
+             <h2>Relatório Semanal</h2>
+             <img src="./img/editIcon.svg" alt="">
+           </div>
+           <div class="boxContent">
+             <canvas id="chart1"></canvas>
+           </div>
+         </div>
+         <div id="spaceReport" class="box">
+           <div class="boxHeader">
+             <h2>Relatório de Espaço</h2>
+             <img src="./img/folderIcon.svg" alt="">
+           </div>
+           <div class="boxContent">
+             <canvas id="chart2"></canvas>
+           </div>
+         </div>
+         <div id="shortcuts" class="box">
+           <div class="boxHeader">
+             <h2>Meus Atalhos</h2>
+             <img src="./img/bugIcon.svg" alt="">
+           </div>
+           <div class="boxContent boxGrid">
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/bugIconWhite.svg" alt="">
+                 <h3>Real Time</h3>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/chatWhite.svg" alt="">
+                 <h3>ChatBot</h3>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/rightArrowWhite.svg" alt="">
+                 <h3>Disparos</h3>
+               </div>
+             </div>
+             <div class="subBox">
+               <div class="iconWrapper">
+                 <img src="./img/personWhite.svg" alt="">
+                 <h3>Meus Contatos</h3>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div id="integrations" class="box">
+           <div class="boxHeader">
+             <h2>Minhas Integrações</h2>
+             <img src="./img/diagram.svg" alt="">
+           </div>
+           <div class="boxContent">
+             <div class="boxTable">
+               <div class="boxTableHeader">
+                 <h3>Descrição</h3>
+                 <h3>Integração</h3>
+                 <h3>Quantidade</h3>
+               </div>
+               <div class="boxTableContent">
+                 <div class="boxTableLine">
+                   <div class="boxTableLineContent">
+                     <span>Instagram</span>
+                   </div>
+                   <div class="boxTableLineContent">
+                     <img src="./img/integrationsLineIcon1.png" alt="">
+                   </div>
+                   <div class="boxTableLineContent">
+                     <span>1</span>
+                   </div>
+                 </div>
+                 <div class="boxTableLine">
+                   <div class="boxTableLineContent">
+                     <span>Telegram</span>
+                   </div>
+                   <div class="boxTableLineContent">
+                     <img src="./img/integrationsLineIcon2.png" alt="">
+                   </div>
+                   <div class="boxTableLineContent">
+                     <span>1</span>
+                   </div>
+                 </div>
+                 <div class="boxTableLine">
+                   <div class="boxTableLineContent">
+                     <span>WhatsApp Official</span>
+                   </div>
+                   <div class="boxTableLineContent">
+                     <img src="./img/integrationsLineIcon3.png" alt="">
+                   </div>
+                   <div class="boxTableLineContent">
+                     <span>1</span>
+                   </div>
+                 </div>
+                 <div class="boxTableLine">
+                   <div class="boxTableLineContent">
+                     <span>Messenger</span>
+                   </div>
+                   <div class="boxTableLineContent">
+                     <img src="./img/integrationsLineIcon4.png" alt="">
+                   </div>
+                   <div class="boxTableLineContent">
+                     <span>1</span>
+                   </div>
+                 </div>
+                 <div class="boxTableLine">
+                   <div class="boxTableLineContent">
+                     <span>WhatsApp Não Oficial</span>
+                   </div>
+                   <div class="boxTableLineContent">
+                     <img src="./img/integrationsLineIcon5.png" alt="">
+                   </div>
+                   <div class="boxTableLineContent">
+                     <span>1</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </main>
+   </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Acessos</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="media.css">
+      <link rel="shortcut icon" href="img/iconLogo.ico" type="image/x-icon">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+   </head>
+   <body>
+      <div class="Topbar">
+         <div class="bar">
+            <div class="left">
+               <img src="img/Logo.png" alt="Logo">
+               <div class="Icons">
+                  <div class="Vector"></div>
+               </div>
+            </div>
+            <div class="Right">
+               <div class="IconR">
+                  <div class="VectorR"></div>
+               </div>
+               <div class="Profile">
+                  <div class="text">Lorem Ipsum dolor sit</div>
+                  <div class="imgProfile"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="Nav">
+         <div class="IconsNav">
+            <ul class="list">
+               <li class="firstIcon">
+                  <div class="firstBox"></div>
+               </li>
+               <li class="secondIcon">
+                  <div class="secondBox">
+                     <div class="vectorC"></div>
+                  </div>
+               </li>
+               <li class="thirdIcon">
+                  <div class="thirdBox">
+                     <div class="vectorB"></div>
+                  </div>
+               </li>
+               <li class="fourthIcon">
+                  <div class="fourthBox">
+                     <div class="vectorCC"></div>
+                  </div>
+               </li>
+               <li class="fifthIcon">
+                  <div class="fifthBox">
+                  </div>
+               </li>
+               <li class="sixthIcon">
+                  <div class="sixthBox">
+                  </div>
+               </li>
+               <li class="seventhIcon">
+                  <div class="seventhBox">
+                     <div class="vectorG"></div>
+                  </div>
+               </li>
+               <li class="eighthIcon">
+                  <div class="eighthBox">
+                  </div>
+               </li>
+               <li class="ninthIcon">
+                  <div class="ninthBox">
+                     <div class="vectorCD"></div>
+                  </div>
+               </li>
+               <li class="tenthIcon">
+                  <div class="tenthBox">
+                     <div class="vectorS"></div>
+                  </div>
+               </li>
+               <li class="eleventhIcon">
+                  <div class="eleventhBox">
+                     <div class="vectorCDtwo"></div>
+                  </div>
+               </li>
+               <li class="twelfthIcon">
+                  <div class="twelfthBox">
+                     <div class="vectorCtwo"></div>
+                  </div>
+               </li>
+               <li class="lastIcon">
+                  <div class="lastBox">
+                     <div class="lastvector"></div>
+                  </div>
+               </li>
+            </ul>
+            <img id='closeNav' src="./img/closeButton.svg">
+         </div>
+      </div>
+      <main>
+         <div class="tab">
+            <div class="tab1">
+               <h1>Dashboard</h1>
+               <div class="line"></div>
+            </div>
+            <div class="tab2">
+               <h1>Acessos</h1>
+            </div>
+         </div>
+         <div class="box1">
+            <div class="titleBox">
+               <h1>Acompanhamento de Dados</h1>
+               <img src="./img/barsDark.svg">
+            </div>
+            <div class="card">
+                <div class="miniCard">
+                   <div class="totalCard">
+                      <img src="./img/pp.svg">
+                      <p>Total</p>
+                   </div>
+                   <div class="resultValue">
+                      <p>0</p>
+                   </div>
+                </div>
+                <div class="miniCard" id="card3">
+                   <div class="totalCardRight">
+                      <img src="./img/replyVectorWhite.svg">
+                      <p>Pago</p>
+                   </div>
+                   <div class="resultValueRight">
+                      <p>R$ 00.00</p>
+                   </div>
+                </div>
+                <div class="minicard" id="card2">
+                   <div class="wait">
+                      <img src="./img/VectorCart.svg">
+                      <p>Valor</p>
+                   </div>
+                   <div class="resultValue2">
+                      <p>R$00.00</p>
+                   </div>
+                </div>
+                <div class="minicard" id="card4">
+                   <div class="toPay">
+                      <img src="./img/toPay.svg">
+                      <p>A Pagar</p>
+                   </div>
+                   <div class="PayValue">
+                      <p>00:00</p>
+                   </div>
+                </div>
+             </div>
+         </div>
+         <div class="box2">
+            <div class="titleBox">
+              <h1>Relatório Mensal</h1>
+              <img src="./img/bars.svg">
+            </div>
+            <div id='weeklyReportChartWrapper'>
+               <canvas id='weeklyReportChart'></canvas>
+            </div>
+         </div>
+         <div class="box3">
+            <div class="titleBox">
+               <h1>Relatório de Espaço (GB)</h1>
+               <img src="./img/graphUpVector.svg">
+            </div>
+               <div id='spaceChartWrapper'>
+               <canvas id='spaceReportChart'></canvas>
+            </div>
+         </div>
+         <div class="Box7">
+         <div class="Box7title">
+            <p>Empresas<p>
+            <img src='./img/VectorShop.svg'>
+         </div>
+         <div class="interBox" id="interBoxInfo">
+        <div class='wrapper'>
+         <div class="InfoTitle">
+            <div class="textInfo">
+               <div id="id">id</div>
+               <div class="empresa">Empresa</div>
+               <div class="valor">Valor</div>
+               <div class="status">Status</div>
+            </div>
+         </div>
+         <div class="info">
+            <div class="textInfo" id="inside">
+               <div id="id">0</div>
+               <div class="empresa">
+                  <div class="kanban"></div>
+                  <p>Lorem ipsum dolor sit</p>
+               </div>
+               <div class="valor">R$ 00,00</div>
+               <div class="status statusItem">Pago</div>
+            </div>
+         </div>
+         <div class="info" id="info1">
+            <div class="textInfo" id="inside1">
+               <div id="id">0</div>
+               <div class="empresa">
+                  <div class="kanban"></div>
+                  <p>Lorem ipsum dolor sit</p>
+               </div>
+               <div class="valor">R$ 00,00</div>
+               <div class="status statusItem">Pago</div>
+            </div>
+         </div>
+         <div class="info" id="INFO2">
+            <div class="textInfo" id="inside2">
+               <div id="id">0</div>
+               <div class="empresa">
+                  <div class="kanban"></div>
+                  <p>Lorem ipsum dolor sit</p>
+               </div>
+               <div class="valor">R$ 00,00</div>
+               <div class="status statusItem unpaid">Pago</div>
+            </div>
+         </div>
+         <div class="info" id="INFO3">
+            <div class="textInfo" id="inside3">
+               <div id="id">0</div>
+               <div class="empresa">
+                  <div class="kanban"></div>
+                  <p>Lorem ipsum dolor sit</p>
+               </div>
+               <div class="valor">R$ 00,00</div>
+               <div class="status statusItem">Pago</div>
+            </div>
+         </div>
+        </div>
+      </main>
+     <div id='mobileMenu'>
+        <img src="./img/Vector3.svg">
+     </div>
+     <script>
+         Chart.register(ChartDataLabels);
+
+
+         const mobileMenu = document.querySelector('#mobileMenu img');
+         const closeNav = document.querySelector('.Nav img#closeNav');
+         const nav = document.querySelector('.Nav');
+
+         mobileMenu.addEventListener('click', () => {
+            nav.classList.add('active');
+         });
+
+         closeNav.addEventListener('click', () => {
+            nav.classList.remove('active');
+         });
+
+         /* weekly chart */
+
+         const weeklyReportChart = document.querySelector('#weeklyReportChart');
+
+         let weeklyData = {1: 0.1, 2: -1, 3: -1, 4: -1, 5: -1, 6: -1, 7: -1, 8: -1, 9: -1, 1: -1, 11: -0.4, 12: 0.1};
+
+         new Chart(weeklyReportChart, {
+            type: 'bar',
+            data: {
+               labels: Object.keys(weeklyData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(weeklyData),
+                  backgroundColor: '#FF3E3E'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        display: false
+                     }
+                  },
+                  scales: {
+                     y: {
+                        min: -2,
+                        max: 2,
+                        ticks: {
+                           stepSize: .2
+                        }
+                     }
+                  }
+             }
+         });
+
+         /* space report */
+         const spaceReportChart = document.querySelector('#spaceReportChart');
+
+         spaceData = {Lorem: 40, Ipsum: 20};
+
+         new Chart(spaceReportChart, {
+            type: 'doughnut',
+            data: {
+               labels: Object.keys(spaceData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(spaceData),
+                  backgroundColor: [
+                     '#0F85EC',
+                     '#66CC99'
+                  ],
+                  cutout: '80%'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        color: '#fdfdfd',
+                        font: {
+                           size: 10,
+                           weight: 'bold'
+                        }
+                     },
+                     tooltip: {
+                        enabled: true
+                     }
+                  }
+             }
+         });
+     </script>
+   </body>
+</html>

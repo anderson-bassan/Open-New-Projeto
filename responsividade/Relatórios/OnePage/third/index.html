@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <div class="Topbar">
+    <div class="bar">
+      <div class="left">
+        <img src="img/Logo.png" alt="Logo">
+        <div class="Icons">
+          <div class="Vector"></div>
+        </div>
+        <div class="Right">
+          <div class="IconR">
+            <div class="VectorR"></div>
+            <div class="Profile">
+              <div class="text">Lorem Ipsum dolor sit</div>
+              <div class="imgProfile"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Nav">
+      <div class="IconsNav">
+        <ul class="list">
+          <li class="firstIcon">
+            <div class="firstBox"></div>
+          </li>
+          <li class="secondIcon">
+            <div class="secondBox">
+              <div class="vectorC"></div>
+            </div>
+          </li>
+          <li class="thirdIcon">
+            <div class="thirdBox">
+              <div class="vectorB"></div>
+            </div>
+          </li>
+          <li class="fourthIcon">
+            <div class="fourthBox">
+              <div class="vectorCC"></div>
+            </div>
+          </li>
+          <li class="fifthIcon">
+            <div class="fifthBox">
+            </div>
+          </li>
+          <li class="sixthIcon">
+            <div class="sixthBox">
+            </div>
+          </li>
+          <li class="seventhIcon">
+            <div class="seventhBox">
+              <div class="vectorG"></div>
+            </div>
+          </li>
+          <li class="eighthIcon">
+            <div class="eighthBox">
+            </div>
+          </li>
+          <li class="ninthIcon">
+            <div class="ninthBox">
+              <div class="vectorCD"></div>
+            </div>
+          </li>
+          <li class="tenthIcon">
+            <div class="tenthBox">
+              <div class="vectorS"></div>
+            </div>
+          </li>
+          <li class="eleventhIcon">
+            <div class="eleventhBox">
+              <div class="vectorCDtwo"></div>
+            </div>
+          </li>
+          <li class="twelfthIcon">
+            <div class="twelfthBox">
+              <div class="vectorCtwo"></div>
+            </div>
+          </li>
+          <li class="lastIcon">
+            <div class="lastBox">
+              <div class="lastvector"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab">
+      <div class="tab1">
+        <h1>Dashboard</h1>
+        <div class="line"></div>
+      </div>
+      <div class="tab2">
+        <h1>Relatórios</h1>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">
+        <div class="leftFunnel">
+          <div class="inside">
+            <div class="funnel"></div>
+            <h1>Filtro</h1>
+          </div>
+          <div class="InfoCircle"></div>
+        </div>
+        <div class="rightCaret">
+          <div class="caretDown"></div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="group">
+          <div class="searchLine"></div>
+        </div>
+      </div>
+      <div class="search" id="file">
+        <div class="file"></div>
+      </div>
+      <div class="form">
+        <div class="data"><input type="week" name="Date" id="InicialDate">
+          <h1>Período</h1>
+        </div>
+        <div class="Agentes" id="atendimentos"> <select class="selectAgent">
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+          </select>
+          <h2>Atendimento</h2>
+        </div>
+        <div class="Agentes"> <select class="selectAgent">
+            <option class="options" value="text">Todas as plataformas</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+          </select>
+          <h2>Plataformas</h2>
+        </div>
+        <div class="team">
+          <select class="selecTeam">
+            <option class="options" value="text">Equipes</option>
+            <option class="options" value="text">Todas as plataformas</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+            <option class="options" value="text">Lorem Ipsum</option>
+          </select>
+          <H2 class="">Equipes</H2>
+        </div>
+      </div>
+      <div class="month">
+        <h1>Jan</h1>
+        <h2>Fev</h2>
+      </div>
+      <div class="openMonth">
+        <div class="tableOne">
+          <div class="tableOneTitle">
+            <h1>Geral</h1>
+          </div>
+          <div class="field">
+            <div class="inputOne">
+              <div class="leftOne">
+                <h1>Total de mensagens</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Total de atendimentos</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuTwo">
+              <div class="leftOne">
+                <h1>Mensagens recebidas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo de atendimento (TTA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuThree">
+              <div class="leftOne">
+                <h1>Mensagens enviadas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de atendimento (TMA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputFour">
+              <div class="leftOne">
+                <h1>Total de pedidos</h1>
+                <div class="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de espera (TME¹)</h1>
+                <div class="result" id="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputLast">
+              <div class="leftOne">
+                <h1>Finalizados pelo Administrador</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1></h1>
+                <div class="result" id="result">
+                  <h1></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tableOne">
+          <div class="tableOneTitle">
+            <h1>Atendimento humano</h1>
+          </div>
+          <div class="field">
+            <div class="inputOne">
+              <div class="leftOne">
+                <h1>Total de mensagens</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Total de atendimentos</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuTwo">
+              <div class="leftOne">
+                <h1>Mensagens recebidas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo de atendimento (TTA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuThree">
+              <div class="leftOne">
+                <h1>Mensagens enviadas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de atendimento (TMA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputFour">
+              <div class="leftOne">
+                <h1>Total de pedidos</h1>
+                <div class="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de espera (TME¹)</h1>
+                <div class="result" id="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputLast">
+              <div class="leftOne">
+                <h1>Finalizados pelo Administrador</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1></h1>
+                <div class="result" id="result">
+                  <h1></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tableOne">
+          <div class="tableOneTitle">
+            <h1>Geral</h1>
+          </div>
+          <div class="field">
+            <div class="inputOne">
+              <div class="leftOne">
+                <h1>Total de mensagens</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Total de atendimentos</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuTwo">
+              <div class="leftOne">
+                <h1>Mensagens recebidas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo de atendimento (TTA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inpuThree">
+              <div class="leftOne">
+                <h1>Mensagens enviadas</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de atendimento (TMA¹)</h1>
+                <div class="result" id="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputFour">
+              <div class="leftOne">
+                <h1>Total de pedidos</h1>
+                <div class="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1>Tempo médio de espera (TME¹)</h1>
+                <div class="result" id="result">
+                  <h1>-</h1>
+                </div>
+              </div>
+            </div>
+            <div class="inputOne" id="inputLast">
+              <div class="leftOne">
+                <h1>Finalizados pelo Administrador</h1>
+                <div class="result">
+                  <h1>0</h1>
+                </div>
+              </div>
+              <div class="rightOne">
+                <h1></h1>
+                <div class="result" id="result">
+                  <h1></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="tableLeft">
+          <div class="leftTitle">
+            <div class="humanText">Atendimento humano</div>
+          </div>
+          <div class="rightOne" id="tableLeftOne">
+            <h1>Total de mensagens</h1>
+            <div class="result" id="tableResult">
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 87px;">
+            <h1>Total de atendimentos</h1>
+            <div class="result" id="tableResult">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 134px;">
+            <h1>Total de perdidos</h1>
+            <div class="result" id="tableResult">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 181px;">
+            <h1>Tempo médio de atendimento (TMA¹)</h1>
+            <div class="result" id="tableResult">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 228px;">
+            <h1>Tempo médio de espera (TME)</h1>
+            <div class="result" id="tableResult">
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="tableLeft" id="tableLeft">
+          <div class="leftTitle">
+            <div class="humanText">Autoatendimento</div>
+            <div class="humanFigure">
+              <div class="badge"></div>
+              <div class="humanUp"></div>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne">
+            <h1>Total de mensagens</h1>
+            <div class="result" id="tableResult">
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 87px;">
+            <h1>Total de atendimentos</h1>
+            <div class="result" id="tableResult">
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 134px;">
+            <h1>Total de perdidos</h1>
+            <div class="result" id="tableResult">
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="rightOne" id="tableLeftOne" style="margin-top: 181px;">
+            <h1>Tempo médio de atendimento (TMA¹)</h1>
+            <div class="result" id="tableResult">
+              <h1></h1>
+            </div>
+          </div>
+        </div> -->
+        <div class="minTables">
+          <div class="minTablesTitle">
+            <div class="leftInside">
+              <div class="leftText">
+                <div class="watch"></div>
+                <h1>Distribuição de atendimentos por estado</h1>
+              </div>
+            </div>
+            <div class="rightInside"></div>
+          </div>
+          <div class="blueBox">
+            <h1>Nenhum registro encontrado!</h1>
+            <div class="info"></div>
+          </div>
+        </div>
+        <div class="minTables" id="minTables">
+          <div class="minTablesTitle">
+            <div class="leftInside">
+              <div class="leftText">
+                <div class="watch" id="calendar">
+                  <div class="date"></div>
+                </div>
+                <h1>Distribuição de atendimentos por dia</h1>
+              </div>
+            </div>
+            <div class="rightInside"></div>
+          </div>
+          <div class="blueBox">
+            <h1>Nenhum registro encontrado!</h1>
+            <div class="info"></div>
+          </div>
+        </div>
+        <div class="minTables" id="minTablesThree">
+          <div class="minTablesTitle">
+            <div class="leftInside">
+              <div class="leftText">
+                <div class="watch" id="calendar">
+                  <div class="date" id="date"></div>
+                </div>
+                <h1>Distribuição de atendimentos por dia da semana</h1>
+              </div>
+            </div>
+            <div class="rightInside"></div>
+          </div>
+          <div class="blueBox">
+            <h1>Nenhum registro encontrado!</h1>
+            <div class="info"></div>
+          </div>
+        </div>
+        <div class="minTables" id="minTablesFour">
+          <div class="minTablesTitle">
+            <div class="leftInside">
+              <div class="leftText">
+                <div class="watch"></div>
+                <h1>Distribuição de atendimentos por hora</h1>
+              </div>
+            </div>
+            <div class="rightInside"></div>
+          </div>
+          <div class="blueBox">
+            <h1>Nenhum registro encontrado!</h1>
+            <div class="info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

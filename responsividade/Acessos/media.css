@@ -1,0 +1,135 @@
+@media screen and (max-width: 498px) {
+	#mobileMenu, .Nav, .nav{
+		display: none !important;
+	}
+
+	main {
+	    grid-template-areas:
+        "tabs"
+        "data"
+        "monthlyReport"
+        "spaceReport"
+        "summary";
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        justify-content: center;
+
+        grid-template-rows: initial;
+	}
+
+	.Topbar {
+		max-width: 100vw;
+	}
+
+	.bar {
+		justify-content: space-between;
+		padding: .5rem 1rem;
+	}
+
+	.Right {
+		margin-left: -50px;
+	}
+
+	.Profile .text {
+		display: none;
+	}
+
+	.Nav {
+		display: none;
+	}
+
+	.box1 {
+		max-width: 300px;
+	}
+
+	.box2 {
+		max-width: 300px;
+	}
+
+	.box3 {
+		max-width: 300px;
+	}
+
+	.Box7 {
+		max-width: 320px;
+	}
+
+	.Box7 p {
+		margin-left: 0;
+	}
+
+	#interBoxInfo {
+		padding: 10px .5rem;
+	}
+
+	.kanban {
+		min-width: 24px;
+	}
+
+	.empresa {
+		min-width: 40%;
+	}
+
+	.info {
+		padding: 0 .5rem;
+	}
+
+	.Nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		display: none;
+
+		width: 100%;
+		height: 100%;
+
+		z-index: 3;
+	}
+
+	.Nav.active {
+		display: flex;
+	}
+
+	.IconsNav {
+		width: 100%;
+		height: 100%;
+	}
+
+	.list {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+
+		height: 100%;
+		width: auto;
+
+		padding: 0;
+	}
+
+	#mobileMenu {
+		position: fixed;
+		bottom: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 100%;
+		background-color: rgba(102, 204, 153, 1);
+	}
+
+	#mobileMenu img {
+		width: 32px;
+		height: 32px;
+
+		padding: .5rem;
+	}
+}
+
+@media screen and (max-width: 415px) {
+}
+
+@media screen and (max-width: 340px) {
+}

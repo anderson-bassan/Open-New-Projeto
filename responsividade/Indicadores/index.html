@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Indicadores</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="media.css">
+      <link rel="shortcut icon" href="img/iconLogo.ico" type="image/x-icon">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+   </head>
+   <body>
+      <div class="Topbar">
+         <div class="bar">
+            <div class="left">
+               <img src="img/Logo.png" alt="Logo">
+               <div class="Icons">
+                  <div class="Vector"></div>
+               </div>
+            </div>
+            <div class="Right">
+               <div class="IconR">
+                  <div class="VectorR"></div>
+               </div>
+               <div class="Profile">
+                  <div class="text">Lorem Ipsum dolor sit</div>
+                  <div class="imgProfile"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="Nav">
+         <div class="IconsNav">
+            <ul class="list">
+               <li class="firstIcon">
+                  <div class="firstBox"></div>
+               </li>
+               <li class="secondIcon">
+                  <div class="secondBox">
+                     <div class="vectorC"></div>
+                  </div>
+               </li>
+               <li class="thirdIcon">
+                  <div class="thirdBox">
+                     <div class="vectorB"></div>
+                  </div>
+               </li>
+               <li class="fourthIcon">
+                  <div class="fourthBox">
+                     <div class="vectorCC"></div>
+                  </div>
+               </li>
+               <li class="fifthIcon">
+                  <div class="fifthBox">
+                  </div>
+               </li>
+               <li class="sixthIcon">
+                  <div class="sixthBox">
+                  </div>
+               </li>
+               <li class="seventhIcon">
+                  <div class="seventhBox">
+                     <div class="vectorG"></div>
+                  </div>
+               </li>
+               <li class="eighthIcon">
+                  <div class="eighthBox">
+                  </div>
+               </li>
+               <li class="ninthIcon">
+                  <div class="ninthBox">
+                     <div class="vectorCD"></div>
+                  </div>
+               </li>
+               <li class="tenthIcon">
+                  <div class="tenthBox">
+                     <div class="vectorS"></div>
+                  </div>
+               </li>
+               <li class="eleventhIcon">
+                  <div class="eleventhBox">
+                     <div class="vectorCDtwo"></div>
+                  </div>
+               </li>
+               <li class="twelfthIcon">
+                  <div class="twelfthBox">
+                     <div class="vectorCtwo"></div>
+                  </div>
+               </li>
+               <li class="lastIcon">
+                  <div class="lastBox">
+                     <div class="lastvector"></div>
+                  </div>
+               </li>
+            </ul>
+            <img id='closeNav' src="./img/closeButton.svg">
+         </div>
+      </div>
+      <main>
+         <div class="tab">
+            <div class="tab1">
+               <h1>Dashboard</h1>
+               <div class="line"></div>
+            </div>
+            <div class="tab2">
+               <h1>Acessos</h1>
+            </div>
+         </div>
+         <div class="box1">
+            <div class="titleBox">
+               <h1>Tempo médio de Atendimento Diário</h1>
+               <img src="./img/barsDark.svg">
+            </div>
+            <div class="card">
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/pp.svg">
+                      <p>Total</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>03:24:16</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/replyVectorWhite.svg">
+                      <p>Navegação</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>00:00:31</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/VectorWait.svg">
+                      <p>Espera</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>00:58:32</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/pp.svg">
+                      <p>Humano</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>02:25:12</p>
+                   </div>
+                </div>
+             </div>
+         </div>
+         <div class="box2">
+            <div class="titleBox">
+               <h1>Indicadores de Atendimento Geral</h1>
+               <img src="./img/barsDark.svg">
+            </div>
+            <div class="card">
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/pp.svg">
+                      <p>Total</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>20</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/replyVectorWhite.svg">
+                      <p>Navegação</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>5</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/VectorWait.svg">
+                      <p>Espera</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>1</p>
+                   </div>
+                </div>
+                <div class="miniCard">
+                   <div class="miniCardLeft">
+                      <img src="./img/pp.svg">
+                      <p>Humano</p>
+                   </div>
+                   <div class="miniCardRight">
+                      <p>20</p>
+                   </div>
+                </div>
+             </div>
+         </div>
+         <div class="box3">
+            <div class="titleBox">
+               <h1>Relatório de Espaço (GB)</h1>
+               <img src="./img/graphUpVector.svg">
+            </div>
+               <div class='spaceChartWrapper'>
+               <canvas class='spaceReportChart'></canvas>
+            </div>
+         </div>
+         <div class="box4">
+            <div class="titleBox">
+               <h1>Consumo de Mensagens</h1>
+               <img src="./img/graphUpVector.svg">
+            </div>
+               <div class='spaceChartWrapper'>
+               <canvas class='spaceReportChart'></canvas>
+            </div>
+         </div>
+         <div class="box5">
+            <div class="titleBox">
+               <h1>Relatório de Espaço (GB)</h1>
+               <img src="./img/graphUpVector.svg">
+            </div>
+               <div class='spaceChartWrapper'>
+               <canvas class='spaceReportChart'></canvas>
+            </div>
+         </div>
+         <div class="box6">
+            <div class="titleBox">
+               <h1>Tabulação</h1>
+               <img src="./img/graphUpVector.svg">
+            </div>
+               <div class='spaceChartWrapper'>
+               <canvas class='spaceReportChart'></canvas>
+            </div>
+         </div>
+         <div class="box7">
+            <div class="titleBox">
+              <h1>Quantidade de Atendimentos por hora</h1>
+              <img src="./img/edit.svg">
+            </div>
+            <div id='servicePerHourChartWrapper'>
+               <canvas id='servicePerHourChart'></canvas>
+            </div>
+         </div>
+      </main>
+     <div id='mobileMenu'>
+        <img src="./img/Vector3.svg">
+     </div>
+     <script>
+         Chart.register(ChartDataLabels);
+
+
+         const mobileMenu = document.querySelector('#mobileMenu img');
+         const closeNav = document.querySelector('.Nav img#closeNav');
+         const nav = document.querySelector('.Nav');
+
+         mobileMenu.addEventListener('click', () => {
+            nav.classList.add('active');
+         });
+
+         closeNav.addEventListener('click', () => {
+            nav.classList.remove('active');
+         });
+
+         /* weekly chart */
+
+         const servicePerHourChart = document.querySelector('#servicePerHourChart');
+
+         let receivedWeeklyData = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 1, 9: 2.5, 10: 3, 11: 1, 12: 1, 13: 1, 14: 1, 15: 2.5, 16: 3, 17: 1, 18: 2, 19: 1, 20: 0, 21: 1, 22: 0, 23: 0};
+
+         new Chart(servicePerHourChart, {
+            type: 'bar',
+            data: {
+               labels: Object.keys(receivedWeeklyData),
+               datasets: [{
+                  label: 'Lorem',
+                  data: Object.values(receivedWeeklyData),
+                  backgroundColor: '#FF3E3E'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        display: false
+                     }
+                  },
+                  scales: {
+                     y: {
+                        min: 0,
+                        max: 3.0,
+                        ticks: {
+                           stepSize: 0.5
+                        }
+                     }
+                  }
+             }
+         });
+
+         /* space report */
+         const spaceReportChart1 = document.querySelector('.spaceReportChart');
+
+         spaceData = {Livre: 9.45, Ipsum: 1};
+
+         new Chart(spaceReportChart1, {
+            type: 'doughnut',
+            data: {
+               labels: Object.keys(spaceData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(spaceData),
+                  backgroundColor: [
+                     '#0F85EC',
+                     '#66CC99'
+                  ],
+                  cutout: '80%'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        color: '#fdfdfd',
+                        font: {
+                           size: 10,
+                           weight: 'bold'
+                        }
+                     },
+                     tooltip: {
+                        enabled: true
+                     }
+                  }
+             }
+         });
+
+
+         /* space report */
+         const spaceReportChart2 = document.querySelectorAll('.spaceReportChart')[1];
+
+         spaceData = {Lore: 25, Ipsum: 2};
+
+         new Chart(spaceReportChart2, {
+            type: 'doughnut',
+            data: {
+               labels: Object.keys(spaceData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(spaceData),
+                  backgroundColor: [
+                     '#F01767',
+                     '#66CC99'
+                  ],
+                  cutout: '80%'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        color: '#fdfdfd',
+                        font: {
+                           size: 10,
+                           weight: 'bold'
+                        }
+                     },
+                     tooltip: {
+                        enabled: true
+                     }
+                  }
+             }
+         });
+
+         /* space report */
+         const spaceReportChart3 = document.querySelectorAll('.spaceReportChart')[2];
+
+         spaceData = {Lore: 0.5, Ipsum: 18};
+
+         new Chart(spaceReportChart3, {
+            type: 'doughnut',
+            data: {
+               labels: Object.keys(spaceData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(spaceData),
+                  backgroundColor: [
+                     '#0F85EC',
+                     '#66CC99'
+                  ],
+                  cutout: '80%'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        color: '#fdfdfd',
+                        font: {
+                           size: 10,
+                           weight: 'bold'
+                        }
+                     },
+                     tooltip: {
+                        enabled: true
+                     }
+                  }
+             }
+         });
+
+         const spaceReportChart4 = document.querySelectorAll('.spaceReportChart')[3];
+
+         spaceData = {Lore: 75, Ipsum: 25};
+
+         new Chart(spaceReportChart4, {
+            type: 'doughnut',
+            data: {
+               labels: Object.keys(spaceData),
+               datasets: [{
+                  label: 'empresas',
+                  data: Object.values(spaceData),
+                  backgroundColor: [
+                     '#6D0ED3',
+                     '#A7A7A7'
+                  ],
+                  cutout: '80%'
+               }]
+            },
+             options: {
+                  maintainAspectRatio: false,
+                  responsive: true,
+                  plugins: {
+                     legend: {
+                         display: true,
+                         position: 'bottom',
+                         labels: {
+                              usePointStyle: true,
+                              pointStyle: 'circle'
+                         }
+                     },
+                     datalabels: {
+                        color: '#fdfdfd',
+                        font: {
+                           size: 10,
+                           weight: 'bold'
+                        }
+                     },
+                     tooltip: {
+                        enabled: true
+                     }
+                  }
+             }
+         });
+
+     </script>
+   </body>
+</html>

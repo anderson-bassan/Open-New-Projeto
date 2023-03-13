@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Atendimento</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="media.css">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   </head>
+   <body>
+      <div class="Topbar">
+         <div class="bar">
+            <div class="left">
+               <img src="img/Logo.png" alt="Logo">
+               <div class="Icons">
+                  <div class="Vector"></div>
+               </div>
+            </div>
+            <div class="Right">
+               <div class="IconR">
+                  <div class="VectorR"></div>
+               </div>
+               <div class="Profile">
+                  <div class="text">Lorem Ipsum dolor sit</div>
+                  <div class="imgProfile"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="Nav">
+         <div class="IconsNav">
+            <ul class="list">
+               <li class="firstIcon">
+                  <div class="firstBox"></div>
+               </li>
+               <li class="secondIcon">
+                  <div class="secondBox">
+                     <div class="vectorC"></div>
+                  </div>
+               </li>
+               <li class="thirdIcon">
+                  <div class="thirdBox">
+                     <div class="vectorB"></div>
+                  </div>
+               </li>
+               <li class="fourthIcon">
+                  <div class="fourthBox">
+                     <div class="vectorCC"></div>
+                  </div>
+               </li>
+               <li class="fifthIcon">
+                  <div class="fifthBox">
+                  </div>
+               </li>
+               <li class="sixthIcon">
+                  <div class="sixthBox">
+                  </div>
+               </li>
+               <li class="seventhIcon">
+                  <div class="seventhBox">
+                     <div class="vectorG"></div>
+                  </div>
+               </li>
+               <li class="eighthIcon">
+                  <div class="eighthBox">
+                  </div>
+               </li>
+               <li class="ninthIcon">
+                  <div class="ninthBox">
+                     <div class="vectorCD"></div>
+                  </div>
+               </li>
+               <li class="tenthIcon">
+                  <div class="tenthBox">
+                     <div class="vectorS"></div>
+                  </div>
+               </li>
+               <li class="eleventhIcon">
+                  <div class="eleventhBox">
+                     <div class="vectorCDtwo"></div>
+                  </div>
+               </li>
+               <li class="twelfthIcon">
+                  <div class="twelfthBox">
+                     <div class="vectorCtwo"></div>
+                  </div>
+               </li>
+               <li class="lastIcon">
+                  <div class="lastBox">
+                     <div class="lastvector"></div>
+                  </div>
+               </li>
+            </ul>
+            <img id='closeNav' src="./img/closeButton.svg">
+         </div>
+      </div>
+      <main class="main">
+         <div class="tab">
+            <div class="tab1">
+               <h1>Dashboard</h1>
+               <div class="line"></div>
+            </div>
+            <div class="tab2">
+               <h1>Atendimento</h1>
+            </div>
+         </div>
+          <div class="cards">
+            <div class="card">
+              <div class="icon">
+                <img src="./img/VectorWhitePeople.svg">
+              </div>
+              <div class="content">
+                <h1>16</h1>
+                <h2>Atendimentos</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <img src="./img/VectorWhitePeople.svg">
+              </div>
+              <div class="content">
+                <h1>0</h1>
+                <h2>Fila</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <img src="./img/VectorWhitePeople.svg">
+              </div>
+              <div class="content">
+                <h1>0</h1>
+                <h2>Robo</h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <img src="./img/VectorWhitePeople.svg">
+              </div>
+              <div class="content">
+                <h1>0</h1>
+                <h2>16</h2>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard">
+            <div class="header">
+              <div class='tabs'>
+                <a href="../Agentes/index.html">
+                  <div class='tabItem'>
+                    <img src="./img/house.svg">
+                    <h2>Agentes</h2>
+                  </div>
+                </a>
+                <div class='tabItem active'>
+                  <img src="./img/VectorUserP.svg">
+                  <h2>Equipes</h2>
+                </div>
+                <a href="../Fases/index.html">
+                  <div class='tabItem'>
+                    <img src="./img/VectorTwoPeople.svg">
+                    <h2>Fases</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="filters">
+                <div class="number">
+                  <h2>100</h2>
+                  <img src="./img/ArrowDownVector.svg">
+                </div>
+                <div class="hopper">
+                  <img src="./img/VectorFunnel.svg">
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="itemHeader">
+                  <div class="profile">
+                    <h3 class='name'>Bruno de Assis</h3>
+                  </div>
+                  <div class="icons">
+                    <div class="iconWrapper">
+                      <img src="./img/VectorCheck.svg">
+                    </div>
+                    <div class="iconWrapper">
+                      <h3>0</h3>
+                      <img src="./img/VectorPerson.svg">
+                    </div>
+                    <div class="iconWrapper clickable">
+                      <img src="./img/VectorThreeDots.svg">
+                    </div>
+                  </div>
+                </div>
+                <div class="itemContent">
+                  <div class="status">
+                    <div class="online">
+                      <img class="icon" src="./img/VectorWatch.svg">
+                      <span class="sessionTimeText">Tempo de sessão:</span>
+                      <span class="days">1 Dia(s)</span>
+                      <span class="hours">0 Hora(s)</span>
+                      <span class="minutes">0 Minuto(s)</span>
+                    </div>
+                    <div class="overload">
+                      <img class="icon" src="./img/VectorStar.svg">
+                      <span class="overloadText">Sem transbordo</span>
+                    </div>
+                  </div>
+                  <div class="sessions">
+                    <h3>Não há sessões</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+      <div id='mobileMenu'>
+         <img src="./img/Vector3.svg">
+      </div>
+   </body>
+   <script>
+      const mobileMenu = document.querySelector('#mobileMenu img');
+      const closeNav = document.querySelector('.Nav img#closeNav');
+      const nav = document.querySelector('.Nav');
+      
+      mobileMenu.addEventListener('click', () => {
+        nav.classList.add('active');
+      });
+      
+      closeNav.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+      
+   </script>
+</html>

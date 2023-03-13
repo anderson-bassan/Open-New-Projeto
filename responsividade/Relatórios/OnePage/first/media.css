@@ -1,0 +1,142 @@
+.Topbar {
+  width: 100%;
+}
+
+@media screen and (max-width: 498px) {
+  .main {
+    width: 280px;
+    left: 20px;
+    height: 380px;
+  }
+
+  .title {
+    width: 280px;
+  }
+
+  .rightCaret {
+    left: 240px;
+  }
+
+  .Nav {
+    left: -58px;
+  }
+
+  .tab {
+    left: 20px;
+  }
+
+  .form {
+    width: 200px;
+  }
+
+  #Endata {
+    position: absolute;
+    left: -15px;
+    top: 60px;
+  }
+
+  .InicialDate2 {
+    margin-left: 0;
+  }
+
+  .Agentes {
+    left: 0;
+    top: 120px;
+  }
+
+  .team {
+    left: 10px;
+    top: 180px;
+  }
+
+  .search {
+    left: 25px;
+    top: 310px;
+  }
+
+  .Right {
+    left: 50px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .Profile {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .main {
+    width: 380px;
+    left: 80px;
+    height: 380px;
+  }
+
+  .title {
+    width: 380px;
+  }
+
+  .rightCaret {
+    left: 340px;
+  }
+
+  .Nav {
+    left: 0;
+    top: 48.5px;
+  }
+
+  .tab {
+    left: 80px;
+  }
+
+  .form {
+    width: 380px;
+  }
+
+  #InicialDate {
+    width: 320px;
+  }
+
+  #Endata {
+    position: absolute;
+    left: -15px;
+    top: 60px;
+  }
+
+  .selectAgent, .options {
+    width: 320px;
+  }
+
+  .InicialDate2 {
+    margin-left: 0;
+  }
+
+  .Agentes {
+    left: 0;
+    top: 120px;
+  }
+
+  .team {
+    left: 10px;
+    top: 180px;
+  }
+
+  .search {
+    left: 25px;
+    top: 310px;
+  }
+
+  .Right {
+    left: 50px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .Profile {
+    width: 60px;
+  }
+}

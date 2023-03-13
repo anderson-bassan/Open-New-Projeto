@@ -1,0 +1,146 @@
+@media screen and (max-width: 498px) {
+	main {
+	    grid-template-areas:
+        "tabs"
+        "cards"
+        "dashboard";
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        justify-content: center;
+
+        grid-template-rows: initial;
+	}
+
+	.dashboard .header {
+		flex-direction: column;
+		align-items: flex-end;
+
+		border: 0.4px solid rgba(197, 197, 197, 1);
+	}
+
+	.dashboard .header .tabs, .dashboard .header a {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.dashboard .header a {
+		border-top: 0.4px solid rgba(197, 197, 197, 1);
+	}
+
+	.dashboard .header .tabs .tabItem {
+		width: 100%;
+	}
+
+	.dashboard .content {
+		grid-template-columns: 1fr;
+
+		justify-content: center;
+
+		padding: 20px;
+	}
+
+  .item {
+		max-width: 280px;
+	}
+
+  .cards {
+    flex-direction: column;
+  }
+
+	.itemHeader {
+		flex-direction: column;
+	}
+
+	.item {
+	}
+
+	.Topbar {
+		max-width: 100vw;
+	}
+
+	.bar {
+		justify-content: space-between;
+		padding: .5rem 1rem;
+	}
+
+	.Right {
+		margin-left: -50px;
+	}
+
+	.Profile .text {
+		display: none;
+	}
+
+	.Nav {
+		display: none;
+	}
+
+	#interBoxInfo {
+		padding: 10px .5rem;
+	}
+
+	.kanban {
+		min-width: 24px;
+	}
+
+	.empresa {
+		min-width: 40%;
+	}
+
+	.info {
+		padding: 0 .5rem;
+	}
+
+	.Nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		display: none;
+
+		width: 100%;
+		height: 100%;
+
+		z-index: 3;
+	}
+
+	.Nav.active {
+		display: flex;
+	}
+
+	.IconsNav {
+		width: 100%;
+		height: 100%;
+	}
+
+	.list {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+
+		height: 100%;
+		width: auto;
+
+		padding: 0;
+	}
+
+	#mobileMenu {
+		position: fixed;
+		bottom: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 100%;
+		background-color: rgba(102, 204, 153, 1);
+	}
+
+	#mobileMenu img {
+		width: 32px;
+		height: 32px;
+
+		padding: .5rem;
+	}
+}
